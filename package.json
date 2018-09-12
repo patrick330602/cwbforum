@@ -1,0 +1,15 @@
+{
+  "name": "cwbforum",
+  "version": "0.0.1",
+  "description": "清水湾论坛",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@206.189.69.83:cwbforum.git"
+  },
+  "author": "HKUSTMSSS",
+  "license": "ISC"
+}
