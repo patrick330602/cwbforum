@@ -8,7 +8,6 @@ module.exports = router;
 
 router.get('/posts/demo', jsonParser, function(req, res) {
     res.send({
-        type: 'POST',
-        body: "{test: 'success'}",
+        test: 'success',
     })
 });
