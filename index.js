@@ -12,6 +12,9 @@ mongoose.connect(dbURI, err => {
     console.log('Connected to database.');
 })
 
+var router = require('./api/posts.js');
+app.use('/api', router);
+
 app.get('/', (req, res) => {
     res.send('homepage');
 });
