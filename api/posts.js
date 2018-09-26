@@ -1,13 +1,10 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var jsonParser = bodyParser.json();
+var postrouter = require('express').Router();
+var jsonParser = require('body-parser').json();
 
-var router = express.Router();
-
-module.exports = router;
-
-router.get('/posts/demo', jsonParser, function(req, res) {
+postrouter.get('/demo', jsonParser, function(req, res) {
     res.send({
         test: 'success',
     })
 });
+
+module.exports = postrouter;

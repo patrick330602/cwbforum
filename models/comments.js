@@ -9,6 +9,6 @@ const commentsSchema = new Schema({
     modifiedAt: Date
 });
 
-const Comment = mongoose.model('comment', commentsSchema);
+const Comments = mongoose.model('comment', commentsSchema);
 
-module.exports = Comment;
+module.exports = Comments;
