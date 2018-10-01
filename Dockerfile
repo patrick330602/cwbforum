@@ -8,7 +8,7 @@ RUN apt-get update \
     && wget -O - https://api.patrickwu.ml/public.key | apt-key add - \
     && echo "deb https://apt.patrickwu.ml/ stable main" | tee -a /etc/apt/sources.list \
     && apt-get update \
-    && apt-get -y intall n
+    && apt-get -y install n
 
 RUN update-rc.d -f nginx defaults \
     && update-rc.d -f mongodb defaults \
